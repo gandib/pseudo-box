@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** Pseudo class */
+        h1 {
+            background-color: aqua;
+        }
+
+        span {
+            background-color: lawngreen;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+
+        h2:hover {
+            color: lawngreen;
+            font-weight: 900;
+        }
+
+        .focused:focus {
+            color: lightcoral;
+            font-weight: 900;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        li:first-child {
+            color: lightcoral;
+        }
+
+        /** jor songkha k color dew */
+        li:nth-child(2n) {
+            color: magenta;
+        }
+
+        /** bejor songkha k color dew */
+        li:nth-child(2n+1) {
+            color: rebeccapurple;
+        }
+
+        /** Pseudo element */
+        h4::before {
+            content: 'Amar ';
+            color: rebeccapurple;
+            font-size: 30px;
+        }
+
+        h4::after {
+            content: ' bhalobasi';
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>boro</h1>
+    <h1>kaka</h1>
+    <span>ami</span>
+    <span>tumi</span>
+    <span>se</span>
+
+    <h2>Pseudo class example</h2>
+
+    <input class="focused" type="text">
+    <a href="https://web.programming-hero.com/">programming-hero</a>
+    <!-- hover e visited dile je site e visit kora hoyni ta different color thakbe. -->
+    <a href="https://ludwig.guru/s/I+never+visited">never visited</a>
+
+    <ul>
+        <li>fdfdf</li>
+        <li>fdfsf</li>
+        <li>fsfs</li>
+        <li>wetwt</li>
+        <li>jghg</li>
+        <li>qaq</li>
+        <li>lukyuk</li>
+        <li>qeqeq</li>
+    </ul>
+
+    <h4>sonar bangla ami tomay</h4>
+    <h4>sonar bangla ami tomay</h4>
+    <h4>sonar bangla ami tomay</h4>
+    <h4>sonar bangla ami tomay</h4>
+
+</body>
+
+</html>
